@@ -1,0 +1,52 @@
+#criar-conta img{
+    height: 55px;
+    width: 200px;
+    border-radius: 40px;
+}
+
+#criar-conta{
+    background-color: #ffffff;
+}
+
+.text-edit{
+    color: #ffffff;
+
+}
+
+#criar-conta .form-container{
+    border-radius: 35px;
+    background-color: rgba(26, 168, 26, 0.863); 
+    max-width: 450px;
+    margin: 5% auto; 
+}
+
+#criar-conta .form-signin{
+    width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+#criar-conta .form-signin input[type="email"]{
+    margin-bottom: -1px;
+    border-bottom-right-radius:  0;
+    border-bottom-left-radius:  0;
+}
+
+#criar-conta .form-signin input[type="password"]{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#criar-conta .login-links a{
+    text-decoration: none;
+    font-size: 10pt;
+
+}
+
+#criar-conta .btn-outline{
+    border: 2;
+    border-color: #085c08;
+    background-color: #ffffff;
+    color: #085c08;
+}

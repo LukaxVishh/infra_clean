@@ -1,0 +1,156 @@
+h1, h2, h3, h4, h5{
+    line-height: 1.5;
+}
+
+p{
+    color: #8b8b8b;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color: rgb(19, 114, 19);
+
+}
+
+.img-logo{
+    height: 55px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+/* BANNER */
+
+#banner{
+    background-color:  rgb(19, 114, 19);
+    color: #fff;
+    padding: 10% 0 10% 0;    
+}
+
+#banner img{
+    padding: 10% 0 10%;  
+    border-radius: 100px;
+}
+
+.col-text{
+    padding: 10% 0 10% 0;  
+}
+
+.btn-banner{
+    margin: 8% 3% 5% 0;
+}
+
+/* FEATURES */
+
+#feature{
+    padding: 7% 5%;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+    border-style: groove;
+    border-radius: 35px;
+    border-color: rgb(19, 114, 19);
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    transition: border 0.3s ease;
+}
+
+.feature-box:hover {
+    border-style: dashed;
+    cursor: pointer;
+}
+
+/* Ajustes para telas médias */
+@media (max-width: 768px) {
+    .feature-box {
+        width: calc(50% - 20px); /* Duas colunas em telas médias */
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 500px) {
+    .feature-box {
+        width: calc(100% - 20px); /* Uma coluna em telas pequenas */
+    }
+}
+
+.icon{
+    color:  rgb(19, 114, 19);
+    margin-bottom: 15px;
+}
+
+/*  AUTOMAÇÕES */
+
+#automacoes{
+    padding: 7% 15%;
+    background-color: #b4a6a63f;
+}
+
+#automacoes img{
+    border-radius: 30px;
+    height: 500px;
+}
+
+/* SOLICITACOES */
+
+#solicitacoes{
+    padding: 20px 0 60px 0;
+}
+
+#solicitacoes .row{
+    padding: 15px;
+    color: rgb(19, 114, 19);
+}
+
+.card{
+    border-color: rgb(19, 114, 19);
+    border-radius: 5px;
+}
+
+.card-header{
+    color: rgb(5, 88, 5);
+}
+
+/* CONTATO */
+
+.col_white_amrc{ 
+    color:#FFF;
+}
+footer{ 
+    background-color:rgb(19, 114, 19); 
+    padding: 2%;
+    color: #FFF;
+}
+.pt2{ 
+    padding-top:40px ; 
+    margin-bottom:20px ;
+}
+footer p{ 
+    font-size:13px; 
+    color:#ffffff; 
+    padding-bottom:0px; 
+    margin-bottom:8px;
+}
+
+.social_footer_ul{ 
+    display:table; 
+    margin:15px auto 0 auto; 
+    list-style-type:none;  
+}
+.social_footer_ul li{ 
+    padding-left:20px; 
+    padding-top:10px; 
+    float:left; 
+}
+.social_footer_ul li a{ 
+    color:#CCC; 
+    border:1px solid #CCC; 
+    padding:8px;
+    border-radius:50%;
+}
+.social_footer_ul li i{  
+    width:20px; height:20px; 
+    text-align:center;
+}
