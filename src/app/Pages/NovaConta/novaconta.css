@@ -15,7 +15,7 @@
 
 #criar-conta .form-container{
     border-radius: 35px;
-    background-color: rgba(26, 168, 26, 0.863); 
+    background-color: rgb(30, 93, 201);; 
     max-width: 450px;
     margin: 5% auto; 
 }
@@ -46,7 +46,7 @@
 
 #criar-conta .btn-outline{
     border: 2;
-    border-color: #085c08;
+    border-color: #2a24d6;
     background-color: #ffffff;
-    color: #085c08;
+    color: #2a24d6;
 }

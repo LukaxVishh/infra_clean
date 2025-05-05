@@ -9,13 +9,13 @@ function Automacoes(){
                     <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div className="carousel-item active" data-bs-interval="100">
-                                <img src="imagens/desconto.png" className="d-block w-100" alt="desconto de recebiveis"></img>
+                                <img src="imagens/cicd.png" className="d-block w-100" alt="CI/CD"></img>
                             </div>
                             <div className="carousel-item" data-bs-interval="2000">
-                                <img src="imagens/cheque.png" className="d-block w-100" alt="cartão e cheque especial"></img>
+                                <img src="imagens/infra.png" className="d-block w-100" alt="infra"></img>
                             </div>
                             <div className="carousel-item">
-                                <img src="imagens/recuperacao.png" className="d-block w-100" alt="recuperacao de credito"></img>
+                                <img src="imagens/cloud.png" className="d-block w-100" alt="Cloud"></img>
                             </div>
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

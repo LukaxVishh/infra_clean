@@ -6,7 +6,7 @@ function Menu(){
         <nav className="navbar fixed-top navbar-expand-md bg-light navbar-light">
             <div className="container">
                 <a className="navbar-brand" href>
-                    <img className="img-logo" src="imagens/sicredii.png" alt="logo"></img>
+                    <img className="img-logo" src="imagens/logoo.png" alt="logo"></img>
                 </a>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

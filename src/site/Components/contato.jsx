@@ -15,7 +15,7 @@ function Contato(){
                             <li><a href="http://webenlance.com"><i className="fab fa-instagram"></i></a></li>
                         </ul>
                         <br></br>
-                        <p className="text-center">Copyright @2025 | Designed With by <a>Sicredi Integração PR/SC</a></p>
+                        <p className="text-center">Copyright @2025 | Designed With by <a>Infra Clean</a></p>
                     </div>
                 </footer>
             </section>

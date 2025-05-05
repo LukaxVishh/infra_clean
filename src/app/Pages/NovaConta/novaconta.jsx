@@ -7,7 +7,7 @@ function NovaConta() {
         <div id="criar-conta">
             <div className="align-itens-center text-center form-container">
                 <form className="form-signin">
-                    <img className="mb-4" src="/imagens/sicredii.png" alt=""  />
+                    <img className="mb-4" src="/imagens/logoo.png" alt=""  />
                     <h1 className="h3 mb-3 fw-normal text-edit">Criar Conta</h1>
                     <div className="form-floating">
                         <input type="email" className="form-control" id="floatingInput" placeholder="e-mail" />
@@ -21,7 +21,7 @@ function NovaConta() {
                     <div className="login-links mt-5">
                         <Link to="/app" className="mx-3 text-edit">Ja tenho uma conta</Link>
                     </div>
-                    <p className="mt-5 mb-3 text-edit">&copy; Sicredi Integração PR/SC</p>
+                    <p className="mt-5 mb-3 text-edit">&copy; Infra Clean</p>
                 </form>
             </div>
         </div>
