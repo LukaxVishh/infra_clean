@@ -5,6 +5,7 @@ import Features from "./Components/features"
 import Automacoes from "./Components/automacoes"
 import Solicitacoes from "./Components/solicitacoes"
 import Contato from "./Components/contato"
+import Historia from "./Components/historia"
 
 function Site(){
     return (
@@ -13,6 +14,7 @@ function Site(){
             <Banner/>
             <Features/>
             <Automacoes/>
+            <Historia/>
             <Solicitacoes/>
             <Contato/>
         </>
