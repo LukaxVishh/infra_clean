@@ -1,0 +1,105 @@
+/* TITULOS E PARÁGRAFOS */
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+}
+
+p {
+    color: #8b8b8b;
+}
+
+/* CLOUD SECTION */
+
+#cloud {
+    padding: 7% 5%;
+    background-color: #f9f9f9;
+}
+
+.cloud-title {
+    color: rgb(30, 93, 201);
+    margin-bottom: 30px;
+}
+
+.cloud-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* BOXES DE CONTEÚDO COM ANIMAÇÃO */
+
+.cloud-box {
+    background-color: #fff;
+    border: 1px solid rgb(30, 93, 201);
+    border-radius: 25px;
+    padding: 20px;
+    flex: 1 1 calc(45% - 20px);
+    transition: transform 0.3s ease, border 0.3s ease;
+    
+    /* Inicialmente invisível e deslocado */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlideUp 1s forwards;
+}
+
+/* Efeito hover */
+
+.cloud-box:hover {
+    transform: translateY(-5px);
+    border-style: dashed;
+}
+
+/* Animação keyframes */
+
+@keyframes fadeSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* AJUSTES PARA TELAS MÉDIAS */
+
+@media (max-width: 768px) {
+    .cloud-box {
+        flex: 1 1 100%;
+    }
+}
+
+/* IMAGEM */
+
+.cloud-img {
+    border-radius: 30px;
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* LISTAS */
+
+.cloud-box ul, .cloud-box ol {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.cloud-box li {
+    margin-bottom: 8px;
+}
+
+/* TITULOS DAS BOXES */
+
+.cloud-box h3 {
+    color: rgb(30, 93, 201);
+    margin-bottom: 10px;
+}
+
+#cloud {
+    flex: 1 0 auto;
+    padding-top: 120px; /* ajuste conforme a altura da sua navbar */
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
