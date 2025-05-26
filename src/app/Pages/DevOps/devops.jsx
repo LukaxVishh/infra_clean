@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../components/Navbar/navbar"; // ajuste o caminho conforme sua estrutura
-import Footer from "../../../site/Components/contato"; // ajuste o caminho conforme necessário
+import Navbar from "../../components/NavbarLogado/NavbarLogado"; // ajuste o caminho conforme sua estrutura
+import Footer from '../../../site/Components/contato';
 import "./devops.css";
 
 function DevOps() {
@@ -38,7 +38,7 @@ function DevOps() {
                         <div className="col-12 col-md-6 col-lg-3 mb-4 d-flex">
                             <div className="card flex-fill">
                                 <div className="card-header text-center"><h1>Automações</h1></div>
-                                    <p className="card-text text-center">Automatização de processos</p>
+                                <p className="card-text text-center">Automatização de processos</p>
                                 <div className="card-body d-flex flex-column align-items-center justify-content-center text-center">
                                     <button
                                         className="btn btn-lg btn-outline-dark mt-auto"
@@ -53,7 +53,7 @@ function DevOps() {
                         <div className="col-12 col-md-6 col-lg-3 mb-4 d-flex">
                             <div className="card flex-fill">
                                 <div className="card-header text-center"><h1>Cloud</h1></div>
-                                    <p className="card-text text-center">Serviços em nuvem</p>
+                                <p className="card-text text-center">Serviços em nuvem</p>
                                 <div className="card-body d-flex flex-column align-items-center justify-content-center text-center">
                                     <button
                                         className="btn btn-lg btn-outline-dark mt-auto"
@@ -68,7 +68,7 @@ function DevOps() {
                         <div className="col-12 col-md-6 col-lg-3 mb-4 d-flex">
                             <div className="card flex-fill">
                                 <div className="card-header text-center"><h1>Infra Física</h1></div>
-                                    <p className="card-text text-center">Infraestrutura física</p>
+                                <p className="card-text text-center">Infraestrutura física</p>
                                 <div className="card-body d-flex flex-column align-items-center justify-content-center text-center">
                                     <button
                                         className="btn btn-lg btn-outline-dark mt-auto"

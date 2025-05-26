@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../components/Navbar/navbar"; // ajuste o caminho conforme sua estrutura
+import Navbar from "../../components/NavbarLogado/NavbarLogado"; // ajuste o caminho conforme sua estrutura
 import Footer from "../../../site/Components/contato"; // ajuste o caminho conforme necessário
 import './devops.css';
 
