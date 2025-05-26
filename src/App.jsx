@@ -2,22 +2,22 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 /* Páginas */
-import Login from './app/pages/Login/login';
+import Login from './app/Pages/Login/login';
 import Site from './site/Site';
-import NovaConta from "./app/pages/NovaConta/novaconta";
-import ResetSenha from "./app/pages/EsqueciSenha/resetsenha";
-import Home from "./app/pages/Home/home";
-import Devops from "./app/pages/DevOps/devops";
-import CICD from "./app/pages/DevOps/cicd";
-import Automacoes from "./app/pages/DevOps/automacoes";
-import Cloud from "./app/pages/DevOps/cloud";
-import InfraFisica from "./app/pages/DevOps/infra";
-import QuizAutomacoes from './app/pages/quiz/automacoes/QuizAutomacoes';
-import Congratulations from './app/pages/quiz/Congratulations';
-import Fail from './app/pages/quiz/Fail';
-import QuizCiCd from './app/pages/quiz/cicd/QuizCiCd';
-import QuizCloud from './app/pages/quiz/cloud/QuizCloud';
-import QuizInfra from './app/pages/quiz/infra/QuizInfra';
+import NovaConta from "./app/Pages/NovaConta/novaconta";
+import ResetSenha from "./app/Pages/EsqueciSenha/resetsenha";
+import Home from "./app/Pages/Home/home";
+import Devops from "./app/Pages/DevOps/devops";
+import CICD from "./app/Pages/DevOps/cicd";
+import Automacoes from "./app/Pages/DevOps/automacoes";
+import Cloud from "./app/Pages/DevOps/cloud";
+import InfraFisica from "./app/Pages/DevOps/infra";
+import QuizAutomacoes from './app/Pages/quiz/automacoes/QuizAutomacoes';
+import Congratulations from './app/Pages/quiz/Congratulations';
+import Fail from './app/Pages/quiz/Fail';
+import QuizCiCd from './app/Pages/quiz/cicd/QuizCiCd';
+import QuizCloud from './app/Pages/quiz/cloud/QuizCloud';
+import QuizInfra from './app/Pages/quiz/infra/QuizInfra';
 
 function App() {
     return (
