@@ -1,12 +1,20 @@
-import React  from "react";
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
 
 function Login() {
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Aqui você pode adicionar validação futuramente
+        navigate("/app/devops"); // ajuste para o caminho da sua página
+    };
+
     return (
         <div id="login">
             <div className="align-itens-center text-center form-container">
-                <form className="form-signin">
+                <form className="form-signin" onSubmit={handleSubmit}>
                     <img className="mb-4" src="imagens/logoo.png" alt=""  />
                     <div className="form-floating">
                         <input type="email" className="form-control" id="floatingInput" placeholder="e-mail" />
