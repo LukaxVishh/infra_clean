@@ -1,7 +1,9 @@
-import React  from "react";
+import React from "react";
+import './Solicitacoes.css';
 
 
-function Solicitacoes(){
+
+function Solicitacoes() {
     return (
         <>
             <section id="solicitacoes">

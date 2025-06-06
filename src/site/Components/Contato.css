@@ -1,0 +1,60 @@
+#contato {
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    text-align: center;
+}
+
+.social_footer_ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social_footer_ul li {
+    display: inline-block;
+}
+
+.social_footer_ul li a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+
+.social_footer_ul li a:hover {
+    color: #38bdf8;
+    background-color: rgba(56, 189, 248, 0.2);
+}
+
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #d1d5db;
+}
+
+footer p a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+footer p a:hover {
+    color: #38bdf8;
+}

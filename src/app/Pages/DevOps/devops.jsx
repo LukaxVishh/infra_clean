@@ -1,90 +1,56 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../components/NavbarLogado/NavbarLogado"; // ajuste o caminho conforme sua estrutura
-import Footer from '../../../site/Components/contato';
-import "./devops.css";
+import Navbar from "../../components/NavbarLogado/NavbarLogado";
+import "./DevOps.css"; 
 
 function DevOps() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    return (
-        <div className="devops-page">
-            <Navbar />
-            <section id="devops">
-                <div className="container">
-                    <div className="row text-center mb-4">
-                        <div className="titulo w-100">
-                            <h1>DevOps</h1>
-                            <p>Conheça nossos tópicos de DevOps</p>
-                        </div>
-                    </div>
-                    <div className="row justify-content-center">
-                        {/* CI/CD */}
-                        <div className="col-12 col-md-6 col-lg-3 mb-4 d-flex">
-                            <div className="card flex-fill">
-                                <div className="card-header text-center"><h1>CI/CD</h1></div>
-                                <p className="card-text text-center">Integrações com Git</p>
-                                <div className="card-body d-flex flex-column align-items-center justify-content-center text-center">
-                                    <button
-                                        className="btn btn-lg btn-outline-dark mt-auto"
-                                        onClick={() => navigate("/devops/cicd")}
-                                    >
-                                        Saiba mais
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        {/* Automações */}
-                        <div className="col-12 col-md-6 col-lg-3 mb-4 d-flex">
-                            <div className="card flex-fill">
-                                <div className="card-header text-center"><h1>Automações</h1></div>
-                                <p className="card-text text-center">Automatização de processos</p>
-                                <div className="card-body d-flex flex-column align-items-center justify-content-center text-center">
-                                    <button
-                                        className="btn btn-lg btn-outline-dark mt-auto"
-                                        onClick={() => navigate("/devops/automacoes")}
-                                    >
-                                        Saiba mais
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        {/* Cloud */}
-                        <div className="col-12 col-md-6 col-lg-3 mb-4 d-flex">
-                            <div className="card flex-fill">
-                                <div className="card-header text-center"><h1>Cloud</h1></div>
-                                <p className="card-text text-center">Serviços em nuvem</p>
-                                <div className="card-body d-flex flex-column align-items-center justify-content-center text-center">
-                                    <button
-                                        className="btn btn-lg btn-outline-dark mt-auto"
-                                        onClick={() => navigate("/devops/cloud")}
-                                    >
-                                        Saiba mais
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        {/* Infra Física */}
-                        <div className="col-12 col-md-6 col-lg-3 mb-4 d-flex">
-                            <div className="card flex-fill">
-                                <div className="card-header text-center"><h1>Infra Física</h1></div>
-                                <p className="card-text text-center">Infraestrutura física</p>
-                                <div className="card-body d-flex flex-column align-items-center justify-content-center text-center">
-                                    <button
-                                        className="btn btn-lg btn-outline-dark mt-auto"
-                                        onClick={() => navigate("/devops/infra")}
-                                    >
-                                        Saiba mais
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <Footer />
+  const cards = [
+    { title: "CI/CD", desc: "Integrações com Git", path: "/devops/cicd" },
+    { title: "Automações", desc: "Automatização de processos", path: "/devops/automacoes" },
+    { title: "Cloud", desc: "Serviços em nuvem", path: "/devops/cloud" },
+    { title: "Infra Física", desc: "Infraestrutura física", path: "/devops/infra" }
+  ];
+
+  return (
+    <>
+    
+   
+    <Navbar />
+    <div className="devops-container">
+     
+
+      <main className="devops-main">
+        <div className="devops-header">
+          <h1>DevOps</h1>
+          <p>Conheça nossos tópicos de DevOps</p>
         </div>
-    );
+
+        <div className="devops-grid">
+          {cards.map(({ title, desc, path }) => (
+            <div key={title} className="devops-card">
+              <h2>{title}</h2>
+              <p>{desc}</p>
+              <button onClick={() => navigate(path)}>Saiba mais</button>
+            </div>
+          ))}
+        </div>
+      </main>
+
+      <footer className="devops-footer">
+        <div className="devops-social">
+          <a href="#" aria-label="Facebook" className="facebook"><i className="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter" className="twitter"><i className="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn" className="linkedin"><i className="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram" className="instagram"><i className="fab fa-instagram"></i></a>
+        </div>
+        <p>© 2025 | Designed by Infra Clean</p>
+      </footer>
+    </div>
+    </>
+  );
 }
+
 
 export default DevOps;

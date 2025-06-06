@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React  from "react";
+import React from "react";
+import './Contato.css';
 
 
-function Contato(){
+
+function Contato() {
     return (
         <>
-            <section id="contato">
+            <section >
                 <footer>
                     <div className="container">
                         <ul className="social_footer_ul">

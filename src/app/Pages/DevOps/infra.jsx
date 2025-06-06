@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/NavbarLogado/NavbarLogado"; 
 import Footer from "../../../site/Components/contato"; 
-import './infra.css'; // ou continue com devops.css
+import './Infra.css'; // ou continue com devops.css
 
 function Infra() {
     return (

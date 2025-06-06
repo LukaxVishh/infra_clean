@@ -1,52 +1,102 @@
-#login img{
-    height: 55px;
-    width: 200px;
-    border-radius: 40px;
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f2f2f2;
 }
 
-#login{
-    background-color: #ffffff;
+.form-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
 }
 
-.text-edit{
-    color: #ffffff;
-
+.logo {
+    max-width: 180px;
+    margin-bottom: 20px;
 }
 
-#login .form-container{
-    border-radius: 35px;
-    background-color: rgb(30, 93, 201);
-    max-width: 450px;
-    margin: 5% auto; 
+h1 {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
 }
 
-#login .form-signin{
-    width: 330px;
-    padding: 15px;
-    margin: auto;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    text-align: left;
 }
 
-#login .form-signin input[type="email"]{
-    margin-bottom: -1px;
-    border-bottom-right-radius:  0;
-    border-bottom-left-radius:  0;
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
 }
 
-#login .form-signin input[type="password"]{
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.2s;
 }
 
-#login .login-links a{
+.form-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #007BFF;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.links a {
+    color: #007BFF;
     text-decoration: none;
-    font-size: 10pt;
-
+    margin: 0 6px;
 }
 
-#login .btn-outline{
-    border: 2;
-    border-color: #2a24d6;
-    background-color: #ffffff;
-    color: #2a24d6;
+.links a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 32px;
+    font-size: 13px;
+    color: #888;
 }

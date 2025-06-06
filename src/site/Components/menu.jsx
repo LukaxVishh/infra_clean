@@ -1,6 +1,6 @@
-import React  from "react";
+import React from "react";
 
-function Menu(){
+function Menu() {
     return (
 
         <nav className="navbar fixed-top navbar-expand-md bg-light navbar-light">
@@ -12,7 +12,7 @@ function Menu(){
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">

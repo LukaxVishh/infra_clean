@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/NavbarLogado/NavbarLogado"; 
 import Footer from "../../../site/Components/contato"; 
-import './cicd.css';
+import './Cicd.css';
 
 function CICD() {
     return (

@@ -1,36 +1,42 @@
-import React  from "react";
+import React, { useState, useEffect } from "react";
+import "./Automacao.css"
 
+const imagens = [
+  { src: "imagens/cicd.png", alt: "CI/CD" },
+  { src: "imagens/infra.png", alt: "Infra" },
+  { src: "imagens/cloud.png", alt: "Cloud" },
+];
 
-function Automacoes(){
-    return (
-        <>
-            <section id="automacoes">
-                <div className="container">
-                    <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active" data-bs-interval="100">
-                                <img src="imagens/cicd.png" className="d-block w-100" alt="CI/CD"></img>
-                            </div>
-                            <div className="carousel-item" data-bs-interval="2000">
-                                <img src="imagens/infra.png" className="d-block w-100" alt="infra"></img>
-                            </div>
-                            <div className="carousel-item">
-                                <img src="imagens/cloud.png" className="d-block w-100" alt="Cloud"></img>
-                            </div>
-                        </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
+function Automacoes() {
+  const [index, setIndex] = useState(0);
+
+  // Troca automática de imagem
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % imagens.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handlePrev = () => {
+    setIndex((prevIndex) => (prevIndex - 1 + imagens.length) % imagens.length);
+  };
+
+  const handleNext = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % imagens.length);
+  };
+
+  return (
+    <section id="automacoes" className="automacoes-section">
+      <div className="carousel-container">
+        <img
+          src={imagens[index].src}
+          alt={imagens[index].alt}
+          className="carousel-image"
+        />
+      </div>
+    </section>
+  );
 }
 
-export default Automacoes
+export default Automacoes;

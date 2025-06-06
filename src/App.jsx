@@ -18,6 +18,8 @@ import Fail from './app/Pages/quiz/Fail';
 import QuizCiCd from './app/Pages/quiz/cicd/QuizCiCd';
 import QuizCloud from './app/Pages/quiz/cloud/QuizCloud';
 import QuizInfra from './app/Pages/quiz/infra/QuizInfra';
+import './App.css';
+
 
 function App() {
     return (
